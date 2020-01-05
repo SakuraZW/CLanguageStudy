@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
+#include <string.h>
+
+#define PRAISE "What a super marvelous name!"   //宏定义后面没有分号
 
 //int main()
 //{
@@ -42,8 +45,17 @@ int main()
 //    printf("me16 = %"PRId16"\n", me16);
 //    return 0;
 
-    int16_t me16 = sizeof(3.56);
-    _Bool i = 0;
-    printf("me16 = %hd\n", i);
+//    int16_t me16 = sizeof(3.56);
+//    _Bool i = 0;
+//    printf("me16 = %hd\n", i);
+
+    char name[40];
+    printf("What's your name?\n");
+    scanf("%s", name);
+    printf("Your name of %d letters occupies %d memoory cells.\n",
+           strlen(name), sizeof name);
+    printf("The phrase of praise has %d letters", strlen(PRAISE));
+    printf("and occupies %d memory cells.\n", sizeof PRAISE);
+    return 0;
 
 }
