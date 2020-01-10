@@ -58,6 +58,9 @@ int main()
 //    printf("and occupies %d memory cells.\n", sizeof PRAISE);
     int i,n;
     _Bool a;
+    int p = 8;
+    int q = 3;
+
     scanf(" %d ,%d", &i, &n);
     printf("\n%d %d", i, n);
     return 0;
